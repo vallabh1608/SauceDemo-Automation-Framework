@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-17T18:21:14 IST" name="SauceDemo Parallel Suite" finished-at="2026-05-17T18:23:49 IST" duration-ms="154818">
+    <groups>
+    </groups>
+    <test started-at="2026-05-17T18:21:14 IST" name="E2E Regression Isolation Tests" finished-at="2026-05-17T18:23:49 IST" duration-ms="154818">
+      <class name="tests.SauceTests">
+        <test-method is-config="true" signature="setupReporting()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:14 IST" name="setupReporting" finished-at="2026-05-17T18:21:14 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReporting -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:14 IST" name="setUp" finished-at="2026-05-17T18:21:20 IST" duration-ms="5961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:20 IST" name="pageSetUp" finished-at="2026-05-17T18:21:20 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="VerifyCartBadgeUpdateOnAddAndRemove()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:20 IST" name="VerifyCartBadgeUpdateOnAddAndRemove" finished-at="2026-05-17T18:21:24 IST" duration-ms="3893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCartBadgeUpdateOnAddAndRemove -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:24 IST" name="tearDown" finished-at="2026-05-17T18:21:30 IST" duration-ms="6283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCartBadgeUpdateOnAddAndRemove status=SUCCESS method=SauceTests.VerifyCartBadgeUpdateOnAddAndRemove()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:30 IST" name="setUp" finished-at="2026-05-17T18:21:35 IST" duration-ms="4477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.e2ePurchase()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="e2ePurchase()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:35 IST" name="e2ePurchase" finished-at="2026-05-17T18:21:39 IST" duration-ms="4067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e2ePurchase -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:35 IST" name="pageSetUp" finished-at="2026-05-17T18:21:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:39 IST" name="tearDown" finished-at="2026-05-17T18:21:46 IST" duration-ms="6896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=e2ePurchase status=SUCCESS method=SauceTests.e2ePurchase()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:47 IST" name="setUp" finished-at="2026-05-17T18:21:51 IST" duration-ms="4574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:51 IST" name="pageSetUp" finished-at="2026-05-17T18:21:51 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:51 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T18:21:52 IST" duration-ms="892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Empty Login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Username is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginScenarios -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:52 IST" name="tearDown" finished-at="2026-05-17T18:21:58 IST" duration-ms="5445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:21:58 IST" name="setUp" finished-at="2026-05-17T18:22:02 IST" duration-ms="4101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:02 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T18:22:02 IST" duration-ms="412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrong Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[wrongpass123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginScenarios -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:02 IST" name="pageSetUp" finished-at="2026-05-17T18:22:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:02 IST" name="tearDown" finished-at="2026-05-17T18:22:08 IST" duration-ms="5512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:08 IST" name="setUp" finished-at="2026-05-17T18:22:12 IST" duration-ms="4615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:12 IST" name="pageSetUp" finished-at="2026-05-17T18:22:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:12 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T18:22:13 IST" duration-ms="781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Locked User]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginScenarios -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:13 IST" name="tearDown" finished-at="2026-05-17T18:22:19 IST" duration-ms="5887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:19 IST" name="setUp" finished-at="2026-05-17T18:22:23 IST" duration-ms="4066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:23 IST" name="pageSetUp" finished-at="2026-05-17T18:22:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:23 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T18:22:24 IST" duration-ms="486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginScenarios -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:24 IST" name="tearDown" finished-at="2026-05-17T18:22:29 IST" duration-ms="5489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:29 IST" name="setUp" finished-at="2026-05-17T18:22:33 IST" duration-ms="4185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.verifyCartPersistenceAndRemoval()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:33 IST" name="pageSetUp" finished-at="2026-05-17T18:22:33 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyCartPersistenceAndRemoval()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:33 IST" name="verifyCartPersistenceAndRemoval" finished-at="2026-05-17T18:22:36 IST" duration-ms="2741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartPersistenceAndRemoval -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:36 IST" name="tearDown" finished-at="2026-05-17T18:22:42 IST" duration-ms="5986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCartPersistenceAndRemoval status=SUCCESS method=SauceTests.verifyCartPersistenceAndRemoval()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:42 IST" name="setUp" finished-at="2026-05-17T18:22:46 IST" duration-ms="4155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.verifyImageAndProductConsistency()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:46 IST" name="pageSetUp" finished-at="2026-05-17T18:22:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyImageAndProductConsistency()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:46 IST" name="verifyImageAndProductConsistency" finished-at="2026-05-17T18:22:48 IST" duration-ms="2139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageAndProductConsistency -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:48 IST" name="tearDown" finished-at="2026-05-17T18:22:54 IST" duration-ms="5611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyImageAndProductConsistency status=SUCCESS method=SauceTests.verifyImageAndProductConsistency()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:54 IST" name="setUp" finished-at="2026-05-17T18:22:58 IST" duration-ms="4522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.verifyProductSorting()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:58 IST" name="pageSetUp" finished-at="2026-05-17T18:22:58 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyProductSorting()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:22:58 IST" name="verifyProductSorting" finished-at="2026-05-17T18:23:01 IST" duration-ms="2997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSorting -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:01 IST" name="tearDown" finished-at="2026-05-17T18:23:08 IST" duration-ms="6108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductSorting status=SUCCESS method=SauceTests.verifyProductSorting()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:08 IST" name="setUp" finished-at="2026-05-17T18:23:11 IST" duration-ms="3570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.verifyLogoutAndSessionValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:11 IST" name="pageSetUp" finished-at="2026-05-17T18:23:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyLogoutAndSessionValidation()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:11 IST" name="verifyLogoutAndSessionValidation" finished-at="2026-05-17T18:23:13 IST" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutAndSessionValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:13 IST" name="tearDown" finished-at="2026-05-17T18:23:19 IST" duration-ms="5755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogoutAndSessionValidation status=SUCCESS method=SauceTests.verifyLogoutAndSessionValidation()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:19 IST" name="setUp" finished-at="2026-05-17T18:23:24 IST" duration-ms="4468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.verifyProductDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:24 IST" name="pageSetUp" finished-at="2026-05-17T18:23:24 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyProductDetailPage()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:24 IST" name="verifyProductDetailPage" finished-at="2026-05-17T18:23:26 IST" duration-ms="2357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetailPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:26 IST" name="tearDown" finished-at="2026-05-17T18:23:32 IST" duration-ms="5753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductDetailPage status=SUCCESS method=SauceTests.verifyProductDetailPage()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:32 IST" name="setUp" finished-at="2026-05-17T18:23:36 IST" duration-ms="4174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SauceTests.verifyCrossUserCartIsolation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:36 IST" name="pageSetUp" finished-at="2026-05-17T18:23:36 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:36 IST" name="verifyCrossUserCartIsolation" finished-at="2026-05-17T18:23:42 IST" depends-on-methods="tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove, tests.SauceTests.verifyCartPersistenceAndRemoval, tests.SauceTests.e2ePurchase" duration-ms="6476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCrossUserCartIsolation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:42 IST" name="tearDown" finished-at="2026-05-17T18:23:49 IST" duration-ms="6578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCrossUserCartIsolation status=SUCCESS method=SauceTests.verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="wrapUpReporting()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T18:23:49 IST" name="wrapUpReporting" finished-at="2026-05-17T18:23:51 IST" duration-ms="1615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUpReporting -->
+      </class> <!-- tests.SauceTests -->
+    </test> <!-- E2E Regression Isolation Tests -->
+  </suite> <!-- SauceDemo Parallel Suite -->
+</testng-results>

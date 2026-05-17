@@ -1,0 +1,15 @@
+pages\ProductDetailsPage.class
+testUtilities\AnnotationTransformer.class
+pages\LoginPage.class
+pages\CartPage.class
+pages\SummaryPage.class
+tests\SauceTests.class
+testUtilities\ExcelReader.class
+base\BaseTest.class
+pages\InventoryPage.class
+testUtilities\RetryAnalyzer.class
+base\DriverFactory.class
+pages\CheckOutPage.class
+testUtilities\DataStore.class
+testUtilities\ConfigReader.class
+testUtilities\ExtentReportManager.class
