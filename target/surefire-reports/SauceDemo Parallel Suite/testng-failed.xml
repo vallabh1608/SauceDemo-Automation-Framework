@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="classes" name="Failed suite [SauceDemo Parallel Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" parallel="classes" name="Failed suite [SauceDemo Parallel Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="testUtilities.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="2" parallel="classes" name="E2E Regression Isolation Tests(failed)">
+  <test thread-count="2" parallel="classes" name="E2E Regression Isolation Tests(failed)" verbose="0">
     <classes>
       <class name="tests.SauceTests">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="wrapUpReporting"/>
-          <include name="setupReporting"/>
           <include name="e2ePurchase"/>
+          <include name="loginScenarios"/>
+          <include name="verifyImageAndProductConsistency"/>
+          <include name="verifyProductSorting"/>
+          <include name="verifyLogoutAndSessionValidation"/>
+          <include name="tearDown"/>
+          <include name="setupReporting"/>
           <include name="verifyCartPersistenceAndRemoval"/>
           <include name="verifyCrossUserCartIsolation"/>
           <include name="VerifyCartBadgeUpdateOnAddAndRemove"/>
           <include name="pageSetUp"/>
+          <include name="verifyProductDetailPage"/>
         </methods>
       </class> <!-- tests.SauceTests -->
     </classes>

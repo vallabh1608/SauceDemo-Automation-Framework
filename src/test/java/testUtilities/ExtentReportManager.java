@@ -21,18 +21,19 @@ public class ExtentReportManager {
                 reportDir.mkdirs();
             }
 
-            // FIX: Change ExtentHtmlReporter to ExtentSparkReporter
+            // Using modern ExtentSparkReporter for Extent Reports v5
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
             
-            // Configure the look and feel using the Spark configuration engine
+            // Configure the UI look and feel
             sparkReporter.config().setTheme(Theme.DARK);
             sparkReporter.config().setDocumentTitle("SauceDemo Automation Project");
             sparkReporter.config().setReportName("E2E Regression Execution Status");
             sparkReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
             extent = new ExtentReports();
-            extent.attachReporter(sparkReporter); // Attached the Spark reporter
+            extent.attachReporter(sparkReporter);
             
+            // Set environment and configuration metadata
             extent.setSystemInfo("Automation Engineer", "Vallabh");
             extent.setSystemInfo("Environment", "QA");
             extent.setSystemInfo("OS", System.getProperty("os.name"));
@@ -51,7 +52,8 @@ public class ExtentReportManager {
         return testTracker.get();
     }
 
-    public static void flushReports() {
+    // FIXED: Renamed to flushReport() to match your BaseTest setup perfectly
+    public static void flushReport() {
         if (extent != null) {
             extent.flush();
         }

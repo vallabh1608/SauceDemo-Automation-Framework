@@ -1,0 +1,172 @@
+2026-05-17 22:12:10 [main] INFO  base.BaseTest - Starting Test Suite execution.
+2026-05-17 22:12:11 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: VerifyCartBadgeUpdateOnAddAndRemove
+2026-05-17 22:12:11 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:12:15 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:12:16 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:12:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting execution metrics sequence verification for cart badge modifications.
+2026-05-17 22:12:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 0 | Driving Click Event context stream.
+2026-05-17 22:12:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 1 | Driving Click Event context stream.
+2026-05-17 22:12:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 2 | Driving Click Event context stream.
+2026-05-17 22:12:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evaluating DOM numeric notification balance badge elements. Current parsed total count: 3
+2026-05-17 22:12:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evicting baseline node array item at grid matrix index position 0.
+2026-05-17 22:12:18 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Recalculating DOM badge properties post-removal actions. Decremented current total balance count: 2
+2026-05-17 22:12:18 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Verifying product name data properties inside the checkout view workspace.
+2026-05-17 22:12:18 [TestNG-test-E2E Regression Isolation Tests-1] WARN  base.BaseTest - Test Case SKIPPED: VerifyCartBadgeUpdateOnAddAndRemove
+2026-05-17 22:12:18 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:12:24 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: VerifyCartBadgeUpdateOnAddAndRemove
+2026-05-17 22:12:24 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:12:27 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:12:28 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:12:28 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting execution metrics sequence verification for cart badge modifications.
+2026-05-17 22:12:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 0 | Driving Click Event context stream.
+2026-05-17 22:12:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 1 | Driving Click Event context stream.
+2026-05-17 22:12:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 2 | Driving Click Event context stream.
+2026-05-17 22:12:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evaluating DOM numeric notification balance badge elements. Current parsed total count: 3
+2026-05-17 22:12:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evicting baseline node array item at grid matrix index position 0.
+2026-05-17 22:12:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Recalculating DOM badge properties post-removal actions. Decremented current total balance count: 2
+2026-05-17 22:12:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Verifying product name data properties inside the checkout view workspace.
+2026-05-17 22:12:30 [TestNG-test-E2E Regression Isolation Tests-1] WARN  base.BaseTest - Test Case SKIPPED: VerifyCartBadgeUpdateOnAddAndRemove
+2026-05-17 22:12:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:12:35 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: VerifyCartBadgeUpdateOnAddAndRemove
+2026-05-17 22:12:35 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:12:39 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting execution metrics sequence verification for cart badge modifications.
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 0 | Driving Click Event context stream.
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 1 | Driving Click Event context stream.
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Interacting with selection layout row index target: 2 | Driving Click Event context stream.
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evaluating DOM numeric notification balance badge elements. Current parsed total count: 3
+2026-05-17 22:12:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evicting baseline node array item at grid matrix index position 0.
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Recalculating DOM badge properties post-removal actions. Decremented current total balance count: 2
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Verifying product name data properties inside the checkout view workspace.
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] ERROR base.BaseTest - Test Case FAILED permanently: VerifyCartBadgeUpdateOnAddAndRemove
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] ERROR base.BaseTest - Exception thrown: 
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.Assert.fail(Assert.java:116) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove(SauceTests.java:149) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Capturing screenshot from the active browser thread.
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Screenshot successfully attached to the Extent Report log entry.
+2026-05-17 22:12:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:12:48 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: e2ePurchase
+2026-05-17 22:12:48 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:12:52 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:12:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:12:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting complete end-to-end checkout purchase execution pipeline workflow.
+2026-05-17 22:12:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Scanning inventory landing catalog table for target entry parameter: 'Sauce Labs Backpack'
+2026-05-17 22:12:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Target object match localized at row entry index slot position: 0
+2026-05-17 22:12:54 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Populating form execution variables with properties context values.
+2026-05-17 22:12:54 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Executing mathematical balance verification audits across transaction summary price strings.
+2026-05-17 22:12:54 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Mathematical matrix evaluation -> Base Cost Subtotal: 29.99 | Added Calculated Sales Tax: 2.4 | Expected Final Grand Total: 32.39
+2026-05-17 22:12:55 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Order submission finalized completely. Validating checkout confirmation screen response string message: Thank you for your order!
+2026-05-17 22:12:55 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: e2ePurchase
+2026-05-17 22:12:55 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:13:01 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: loginScenarios
+2026-05-17 22:13:01 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:13:06 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:13:07 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:13:07 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Executing Auth Profile verification profile strategy: [Empty Login] for user context ID: 
+2026-05-17 22:13:07 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Authentication rejected as expected. Evaluating alert text layer message string: Epic sadface: Username is required
+2026-05-17 22:13:07 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: loginScenarios
+2026-05-17 22:13:07 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:13:13 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: loginScenarios
+2026-05-17 22:13:13 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:13:17 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:13:18 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:13:18 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Executing Auth Profile verification profile strategy: [Wrong Password] for user context ID: standard_user
+2026-05-17 22:13:19 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Authentication rejected as expected. Evaluating alert text layer message string: Epic sadface: Username and password do not match any user in this service
+2026-05-17 22:13:19 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: loginScenarios
+2026-05-17 22:13:19 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:13:25 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: loginScenarios
+2026-05-17 22:13:25 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:13:29 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:13:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:13:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Executing Auth Profile verification profile strategy: [Locked User] for user context ID: locked_out_user
+2026-05-17 22:13:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Authentication rejected as expected. Evaluating alert text layer message string: Epic sadface: Sorry, this user has been locked out.
+2026-05-17 22:13:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: loginScenarios
+2026-05-17 22:13:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:13:36 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: loginScenarios
+2026-05-17 22:13:36 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:13:40 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:13:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:13:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Executing Auth Profile verification profile strategy: [Valid Login] for user context ID: standard_user
+2026-05-17 22:13:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Dashboard validation hit. Parsing screen context title banner. Evaluated text title output: Products
+2026-05-17 22:13:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: loginScenarios
+2026-05-17 22:13:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:13:47 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: verifyCartPersistenceAndRemoval
+2026-05-17 22:13:47 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:13:51 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:13:52 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:13:52 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting verifyCartPersistenceAndRemoval system workflow stress strategy execution run.
+2026-05-17 22:13:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Simulating user navigation detours to evaluate page memory cache state retention parameters properties.
+2026-05-17 22:13:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evicting item record tracking block entry completely from table context layout inside Cart checkout workspace view.
+2026-05-17 22:13:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evaluating integrity metrics of surviving product list array records elements items data parameters metadata markers.
+2026-05-17 22:13:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: verifyCartPersistenceAndRemoval
+2026-05-17 22:13:53 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:14:03 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: verifyImageAndProductConsistency
+2026-05-17 22:14:03 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:14:07 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:14:08 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:14:08 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting global static content validation checks and compliance accessibility audits loop.
+2026-05-17 22:14:08 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Discovered total graphic components arrays properties. Iterating over image links count total target: 6
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing index position reference element properties node item [0] | Source Path string location: https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a385945026062b.jpg | Accessibility Label Tag info: Sauce Labs Backpack
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing index position reference element properties node item [1] | Source Path string location: https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b09a7d77409d63.jpg | Accessibility Label Tag info: Sauce Labs Bike Light
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing index position reference element properties node item [2] | Source Path string location: https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5f0a35ed5931e.jpg | Accessibility Label Tag info: Sauce Labs Bolt T-Shirt
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing index position reference element properties node item [3] | Source Path string location: https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf301e698772c8.jpg | Accessibility Label Tag info: Sauce Labs Fleece Jacket
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing index position reference element properties node item [4] | Source Path string location: https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b271ef4c3bc430.jpg | Accessibility Label Tag info: Sauce Labs Onesie
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing index position reference element properties node item [5] | Source Path string location: https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef477804e54fc7b.jpg | Accessibility Label Tag info: Test.allTheThings() T-Shirt (Red)
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Testing element hyperlink consistency mapping. Target item picture mapping to perform action: Sauce Labs Backpack
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Detailed anchor view redirection tracking completed. Loaded detail sheet focus header item text output contents parameter: Sauce Labs Backpack
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: verifyImageAndProductConsistency
+2026-05-17 22:14:09 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:14:15 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: verifyLogoutAndSessionValidation
+2026-05-17 22:14:15 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:14:18 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:14:19 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:14:19 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting verifyLogoutAndSessionValidation security access workflow validation processing sequence.
+2026-05-17 22:14:20 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Triggering exit application logout commands to clear active profile authorization context headers elements.
+2026-05-17 22:14:20 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Evaluating location routing after explicit user sign-out action commands. Verified destination link: https://www.saucedemo.com/
+2026-05-17 22:14:20 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Injecting rogue bypass navigation tracking script link to forcefully load deep internal protected view directories dashboard layout without active auth.
+2026-05-17 22:14:21 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Analyzing security guard intercept action responses. Page tracking url post injection bypass attempt: https://www.saucedemo.com/
+2026-05-17 22:14:21 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: verifyLogoutAndSessionValidation
+2026-05-17 22:14:21 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:14:26 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: verifyProductDetailPage
+2026-05-17 22:14:26 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:14:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:14:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:14:30 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting verifyProductDetailPage deep link verification sequence strategy.
+2026-05-17 22:14:31 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Target product item name identified at grid catalog line entry reference: Sauce Labs Bike Light
+2026-05-17 22:14:31 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Extracting individual localized element variables from specialized focus layout sheets panel.
+2026-05-17 22:14:31 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Testing product addition execution triggers directly inside deep detailed panels focus view layout matrix.
+2026-05-17 22:14:31 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - History back button redirection routing verification audit checklist step. Navigated location state tracking pointer link URL: https://www.saucedemo.com/inventory.html
+2026-05-17 22:14:32 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: verifyProductDetailPage
+2026-05-17 22:14:32 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:14:37 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Setting up browser environment for test case: verifyProductSorting
+2026-05-17 22:14:37 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Configurations -> Browser: edge, Mode: local, Headless: true
+2026-05-17 22:14:40 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Navigating to URL: https://www.saucedemo.com/
+2026-05-17 22:14:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.
+2026-05-17 22:14:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Starting verifyProductSorting test sequence operations.
+2026-05-17 22:14:41 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Modifying active grid element sort sequence parameters to target format: Price (low to high)
+2026-05-17 22:14:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Price parsing matrix map step completed. Discovered item cost array sequence: [7.99, 9.99, 15.99, 15.99, 29.99, 49.99]
+2026-05-17 22:14:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Modifying active grid element sort sequence parameters to target format: Name (Z to A)
+2026-05-17 22:14:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Lexicographical label string arrays compiled completely: [Test.allTheThings() T-Shirt (Red), Sauce Labs Onesie, Sauce Labs Fleece Jacket, Sauce Labs Bolt T-Shirt, Sauce Labs Bike Light, Sauce Labs Backpack]
+2026-05-17 22:14:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Test Case PASSED: verifyProductSorting
+2026-05-17 22:14:42 [TestNG-test-E2E Regression Isolation Tests-1] INFO  base.BaseTest - Closing browser driver instance.
+2026-05-17 22:14:48 [main] INFO  base.BaseTest - Writing all final test logs and compiling the Extent Report HTML file.
+2026-05-17 22:14:48 [main] INFO  base.BaseTest - Suite execution completed successfully.

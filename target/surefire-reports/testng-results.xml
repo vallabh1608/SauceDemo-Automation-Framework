@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="0" failed="0" skipped="12">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-17T19:07:11 IST" name="SauceDemo Parallel Suite" finished-at="2026-05-17T19:09:18 IST" duration-ms="127053">
+  <suite started-at="2026-05-17T22:02:44 IST" name="SauceDemo Parallel Suite" finished-at="2026-05-17T22:02:45 IST" duration-ms="1306">
     <groups>
     </groups>
-    <test started-at="2026-05-17T19:07:11 IST" name="E2E Regression Isolation Tests" finished-at="2026-05-17T19:09:18 IST" duration-ms="127053">
+    <test started-at="2026-05-17T22:02:44 IST" name="E2E Regression Isolation Tests" finished-at="2026-05-17T22:02:45 IST" duration-ms="1306">
       <class name="tests.SauceTests">
-        <test-method is-config="true" signature="setupReporting()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:10 IST" name="setupReporting" finished-at="2026-05-17T19:07:11 IST" duration-ms="350" status="PASS">
+        <test-method is-config="true" signature="setupReporting()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:44 IST" name="setupReporting" finished-at="2026-05-17T22:02:44 IST" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReporting -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:11 IST" name="setUp" finished-at="2026-05-17T19:07:16 IST" duration-ms="5077" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:44 IST" name="setUp" finished-at="2026-05-17T22:02:45 IST" duration-ms="569" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -19,74 +19,135 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:16 IST" name="pageSetUp" finished-at="2026-05-17T19:07:16 IST" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="VerifyCartBadgeUpdateOnAddAndRemove()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:16 IST" name="VerifyCartBadgeUpdateOnAddAndRemove" finished-at="2026-05-17T19:07:17 IST" duration-ms="1027" status="PASS">
+        <test-method signature="VerifyCartBadgeUpdateOnAddAndRemove()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="VerifyCartBadgeUpdateOnAddAndRemove" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCartBadgeUpdateOnAddAndRemove -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:17 IST" name="tearDown" finished-at="2026-05-17T19:07:23 IST" duration-ms="5595" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyCartBadgeUpdateOnAddAndRemove status=SUCCESS method=SauceTests.VerifyCartBadgeUpdateOnAddAndRemove()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:23 IST" name="setUp" finished-at="2026-05-17T19:07:26 IST" duration-ms="3730" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.e2ePurchase()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:26 IST" name="pageSetUp" finished-at="2026-05-17T19:07:26 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565113" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="e2ePurchase()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:26 IST" name="e2ePurchase" finished-at="2026-05-17T19:07:28 IST" duration-ms="1357" status="PASS">
+        <test-method signature="e2ePurchase()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="e2ePurchase" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- e2ePurchase -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:28 IST" name="tearDown" finished-at="2026-05-17T19:07:32 IST" duration-ms="4338" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=e2ePurchase status=SUCCESS method=SauceTests.e2ePurchase()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565129" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:33 IST" name="setUp" finished-at="2026-05-17T19:07:36 IST" duration-ms="3610" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565129" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:36 IST" name="pageSetUp" finished-at="2026-05-17T19:07:36 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565129" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:36 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T19:07:37 IST" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565129" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565819" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565819" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565819" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565819" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -109,36 +170,37 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScenarios -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:37 IST" name="tearDown" finished-at="2026-05-17T19:07:41 IST" duration-ms="4538" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:41 IST" name="setUp" finished-at="2026-05-17T19:07:45 IST" duration-ms="3650" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:45 IST" name="pageSetUp" finished-at="2026-05-17T19:07:45 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:45 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T19:07:45 IST" duration-ms="304" status="PASS">
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -161,36 +223,49 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScenarios -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:45 IST" name="tearDown" finished-at="2026-05-17T19:07:50 IST" duration-ms="4491" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565819" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:50 IST" name="setUp" finished-at="2026-05-17T19:07:53 IST" duration-ms="3630" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565819" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:53 IST" name="pageSetUp" finished-at="2026-05-17T19:07:53 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565823" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:53 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T19:07:54 IST" duration-ms="330" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -213,36 +288,174 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScenarios -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:54 IST" name="tearDown" finished-at="2026-05-17T19:07:57 IST" duration-ms="3744" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565823" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:07:57 IST" name="setUp" finished-at="2026-05-17T19:08:01 IST" duration-ms="3672" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:01 IST" name="pageSetUp" finished-at="2026-05-17T19:08:01 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565823" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:01 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T19:08:01 IST" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyImageAndProductConsistency()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="verifyImageAndProductConsistency" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageAndProductConsistency -->
+        <test-method signature="verifyProductSorting()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="verifyProductSorting" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSorting -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="verifyCrossUserCartIsolation" finished-at="2026-05-17T22:02:45 IST" depends-on-methods="tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove, tests.SauceTests.verifyCartPersistenceAndRemoval, tests.SauceTests.e2ePurchase" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SauceTests.verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@2df6226d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SauceTests.verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@2df6226d] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCrossUserCartIsolation -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="pageSetUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetUp -->
+        <test-method signature="loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="loginScenarios" data-provider="loginData" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -265,201 +478,154 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScenarios -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:01 IST" name="tearDown" finished-at="2026-05-17T19:08:05 IST" duration-ms="3819" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:05 IST" name="setUp" finished-at="2026-05-17T19:08:09 IST" duration-ms="4060" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.verifyCartPersistenceAndRemoval()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:09 IST" name="pageSetUp" finished-at="2026-05-17T19:08:09 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyCartPersistenceAndRemoval()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:09 IST" name="verifyCartPersistenceAndRemoval" finished-at="2026-05-17T19:08:10 IST" duration-ms="1109" status="PASS">
+        <test-method signature="verifyCartPersistenceAndRemoval()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="verifyCartPersistenceAndRemoval" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartPersistenceAndRemoval -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:10 IST" name="tearDown" finished-at="2026-05-17T19:08:14 IST" duration-ms="3999" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCartPersistenceAndRemoval status=SUCCESS method=SauceTests.verifyCartPersistenceAndRemoval()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:14 IST" name="setUp" finished-at="2026-05-17T19:08:19 IST" duration-ms="4368" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.verifyImageAndProductConsistency()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:19 IST" name="pageSetUp" finished-at="2026-05-17T19:08:19 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyImageAndProductConsistency()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:19 IST" name="verifyImageAndProductConsistency" finished-at="2026-05-17T19:08:20 IST" duration-ms="1726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyImageAndProductConsistency -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:20 IST" name="tearDown" finished-at="2026-05-17T19:08:24 IST" duration-ms="3977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyImageAndProductConsistency status=SUCCESS method=SauceTests.verifyImageAndProductConsistency()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:24 IST" name="setUp" finished-at="2026-05-17T19:08:29 IST" duration-ms="4058" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.verifyProductSorting()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:29 IST" name="pageSetUp" finished-at="2026-05-17T19:08:29 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyProductSorting()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:29 IST" name="verifyProductSorting" finished-at="2026-05-17T19:08:31 IST" duration-ms="2390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductSorting -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:31 IST" name="tearDown" finished-at="2026-05-17T19:08:38 IST" duration-ms="6777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProductSorting status=SUCCESS method=SauceTests.verifyProductSorting()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:38 IST" name="setUp" finished-at="2026-05-17T19:08:44 IST" duration-ms="5932" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.verifyLogoutAndSessionValidation()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:44 IST" name="pageSetUp" finished-at="2026-05-17T19:08:44 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyLogoutAndSessionValidation()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:44 IST" name="verifyLogoutAndSessionValidation" finished-at="2026-05-17T19:08:46 IST" duration-ms="2063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoutAndSessionValidation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:46 IST" name="tearDown" finished-at="2026-05-17T19:08:51 IST" duration-ms="5336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogoutAndSessionValidation status=SUCCESS method=SauceTests.verifyLogoutAndSessionValidation()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:51 IST" name="setUp" finished-at="2026-05-17T19:08:56 IST" duration-ms="4660" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.verifyProductDetailPage()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:56 IST" name="pageSetUp" finished-at="2026-05-17T19:08:56 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyProductDetailPage()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:56 IST" name="verifyProductDetailPage" finished-at="2026-05-17T19:08:58 IST" duration-ms="2376" status="PASS">
+        <test-method signature="verifyProductDetailPage()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="verifyProductDetailPage" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetailPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:08:58 IST" name="tearDown" finished-at="2026-05-17T19:09:03 IST" duration-ms="4654" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProductDetailPage status=SUCCESS method=SauceTests.verifyProductDetailPage()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:09:03 IST" name="setUp" finished-at="2026-05-17T19:09:08 IST" duration-ms="4786" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SauceTests.verifyCrossUserCartIsolation()]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyLogoutAndSessionValidation()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="verifyLogoutAndSessionValidation" finished-at="2026-05-17T22:02:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "base.DriverFactory.getDriver()" is null
+at base.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutAndSessionValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:09:08 IST" name="pageSetUp" finished-at="2026-05-17T19:09:08 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:09:08 IST" name="verifyCrossUserCartIsolation" finished-at="2026-05-17T19:09:13 IST" depends-on-methods="tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove, tests.SauceTests.verifyCartPersistenceAndRemoval, tests.SauceTests.e2ePurchase" duration-ms="5752" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCrossUserCartIsolation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:09:13 IST" name="tearDown" finished-at="2026-05-17T19:09:18 IST" duration-ms="4570" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCrossUserCartIsolation status=SUCCESS method=SauceTests.verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@7ce3cb8e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="wrapUpReporting()[pri:0, instance:tests.SauceTests@7ce3cb8e]" started-at="2026-05-17T19:09:18 IST" name="wrapUpReporting" finished-at="2026-05-17T19:09:19 IST" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565825" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="wrapUpReporting()[pri:0, instance:tests.SauceTests@2df6226d]" started-at="2026-05-17T22:02:45 IST" name="wrapUpReporting" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1779035565871" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUpReporting -->

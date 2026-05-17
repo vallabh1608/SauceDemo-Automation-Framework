@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>E2E Regression Isolation Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/12</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 17 19:07:11 IST 2026</td>
+<td>Started on:</td><td>Sun May 17 22:02:44 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>127 seconds (127053 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1306 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,73 +67,566 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SauceTests.verifyImageAndProductConsistency()'><b>verifyImageAndProductConsistency</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>1</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
-<tr>
-<td title='tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove()'><b>VerifyCartBadgeUpdateOnAddAndRemove</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>1</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
-<tr>
-<td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Empty Login, , , Epic sadface: Username is required</td>
-<td></td>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests<br>Parameters: public void tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove()</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43619940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace43619940'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
 <td>0</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td>tests.SauceTests@2df6226d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Locked User, locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
 <td></td>
-<td>0</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
 <tr>
-<td title='tests.SauceTests.verifyProductSorting()'><b>verifyProductSorting</b><br>Test class: tests.SauceTests</td>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
 <td></td>
-<td>2</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.pageSetUp()'><b>pageSetUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.tearDown()'><b>tearDown</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.setUp()'><b>setUp</b><br>Test class: tests.SauceTests</td>
+<td></td>
+<td>-1779035565</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='tests.SauceTests.verifyLogoutAndSessionValidation()'><b>verifyLogoutAndSessionValidation</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>2</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556351271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556351271'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Locked User, locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace864853480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace864853480'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.verifyImageAndProductConsistency()'><b>verifyImageAndProductConsistency</b><br>Test class: tests.SauceTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629394006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1629394006'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.verifyProductSorting()'><b>verifyProductSorting</b><br>Test class: tests.SauceTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace151865989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace151865989'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Empty Login, , , Epic sadface: Username is required</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace805538958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805538958'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
 <tr>
 <td title='tests.SauceTests.verifyCrossUserCartIsolation()'><b>verifyCrossUserCartIsolation</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>5</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td><div><pre>java.lang.Throwable: Method SauceTests.verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@2df6226d] depends on not successfully finished methods
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672707670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace672707670'><pre>java.lang.Throwable: Method SauceTests.verifyCrossUserCartIsolation()[pri:0, instance:tests.SauceTests@2df6226d] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
 <tr>
-<td title='tests.SauceTests.e2ePurchase()'><b>e2ePurchase</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>1</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
-<tr>
-<td title='tests.SauceTests.verifyProductDetailPage()'><b>verifyProductDetailPage</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>2</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td title='tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove()'><b>VerifyCartBadgeUpdateOnAddAndRemove</b><br>Test class: tests.SauceTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1449014601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1449014601'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
 <tr>
 <td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Valid Login, standard_user, secret_sauce, Products</td>
-<td></td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1366353321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1366353321'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
 <td>0</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
-<tr>
-<td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any user in this service</td>
-<td></td>
-<td>0</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td>tests.SauceTests@2df6226d</td></tr>
 <tr>
 <td title='tests.SauceTests.verifyCartPersistenceAndRemoval()'><b>verifyCartPersistenceAndRemoval</b><br>Test class: tests.SauceTests</td>
-<td></td>
-<td>1</td>
-<td>tests.SauceTests@7ce3cb8e</td></tr>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49342829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace49342829'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.loginScenarios()'><b>loginScenarios</b><br>Test class: tests.SauceTests<br>Parameters: Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any user in this service</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace56280324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace56280324'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.e2ePurchase()'><b>e2ePurchase</b><br>Test class: tests.SauceTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901554275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901554275'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
+<tr>
+<td title='tests.SauceTests.verifyProductDetailPage()'><b>verifyProductDetailPage</b><br>Test class: tests.SauceTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace520470618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace520470618'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;base.DriverFactory.getDriver()&quot; is null
+	at base.BaseTest.setUp(BaseTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.SauceTests@2df6226d</td></tr>
 </table><p>
 </body>
 </html>

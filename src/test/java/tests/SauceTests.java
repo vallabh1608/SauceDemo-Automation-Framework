@@ -32,6 +32,7 @@ public class SauceTests extends BaseTest {
 	
 	@BeforeMethod
 	public void pageSetUp() {
+	    log.info("Initializing ThreadLocal WebDriver context hook inside SauceTests session execution lane.");
 	    WebDriver activeThreadDriver = DriverFactory.getDriver();
 	    
 	    loginPage = new LoginPage(activeThreadDriver);
@@ -44,14 +45,19 @@ public class SauceTests extends BaseTest {
 	
 	@Test(dataProvider = "loginData", dataProviderClass = DataStore.class)
 	public void loginScenarios(String scenario, String userName, String passWord, String Expected) {
+		log.info("Executing Auth Profile verification profile strategy: [" + scenario + "] for user context ID: " + userName);
 		ExtentReportManager.getTest().info("Executing Authentication Profile: " + scenario);
+		
 		loginPage.login(userName, passWord);
 		
 		if(scenario.equalsIgnoreCase("Valid Login")) {
-			Assert.assertEquals(inventoryPage.getPageTitle(), Expected, "Valid Login failed!");
+			String currentTitle = inventoryPage.getPageTitle();
+			log.info("Dashboard validation hit. Parsing screen context title banner. Evaluated text title output: " + currentTitle);
+			Assert.assertEquals(currentTitle, Expected, "Valid Login failed!");
 			ExtentReportManager.getTest().pass("Successfully reached inventory landing dashboard.");
 		} else {
 			String errText = loginPage.getErrMsg();
+			log.info("Authentication rejected as expected. Evaluating alert text layer message string: " + errText);
 			Assert.assertTrue(errText.contains(Expected), "Expected error message not found for: " + scenario);
 			ExtentReportManager.getTest().pass("Negative authentication handled correctly. System surfaced expected error banner.");
 		}
@@ -59,8 +65,10 @@ public class SauceTests extends BaseTest {
 	
 	@Test
 	public void verifyProductSorting() {
+		log.info("Starting verifyProductSorting test sequence operations.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		
+		log.info("Modifying active grid element sort sequence parameters to target format: Price (low to high)");
 		ExtentReportManager.getTest().info("Altering product listing sorting option to: Price (low to high)");
 		inventoryPage.sortByVisibileText(InventoryPage.SORT_LOW_HIGH);
 		
@@ -70,12 +78,14 @@ public class SauceTests extends BaseTest {
 			Double price = Double.parseDouble(pricesEl.getText().replace("$", ""));
 			actualPrices.add(price);
 		}
+		log.info("Price parsing matrix map step completed. Discovered item cost array sequence: " + actualPrices);
 		
 		List<Double> sortedPrices = new ArrayList<>(actualPrices);
 		Collections.sort(sortedPrices);
 		Assert.assertEquals(actualPrices, sortedPrices, "Prices are NOT sorted Low to High!");
 		ExtentReportManager.getTest().pass("Verified low-to-high numeric price sequencing remains secure.");
 		
+		log.info("Modifying active grid element sort sequence parameters to target format: Name (Z to A)");
 		ExtentReportManager.getTest().info("Altering product listing sorting option to: Name (Z to A)");
 		inventoryPage.sortByVisibileText(InventoryPage.SORT_Z_TO_A);
 		
@@ -84,21 +94,25 @@ public class SauceTests extends BaseTest {
 		for(WebElement nameEl : nameElements) {
 			actualNames.add(nameEl.getText());
 		}
+		log.info("Lexicographical label string arrays compiled completely: " + actualNames);
 		
 		List<String> sortedNames = new ArrayList<>(actualNames);
 		Collections.sort(sortedNames, Collections.reverseOrder());
 		Assert.assertEquals(actualNames, sortedNames, "Names are NOT sorted Z to A!");
 		ExtentReportManager.getTest().pass("Verified lexicographical reverse alphabetical sorting sequence order.");
+		
 	}
 	
 	@Test
 	public void VerifyCartBadgeUpdateOnAddAndRemove() {
+		log.info("Starting execution metrics sequence verification for cart badge modifications.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		
 		ExtentReportManager.getTest().info("Adding first 3 elements iteratively to the active shopping cart selection.");
 		for(int i = 0; i < 3; i++) {
 			inventoryPage.refreshElements(); 
 			List<WebElement> inventoryBtns = inventoryPage.getInventoryBtns();
+			log.info("Interacting with selection layout row index target: " + i + " | Driving Click Event context stream.");
 			inventoryBtns.get(i).click();
 			
 			inventoryPage.refreshElements(); 
@@ -110,18 +124,25 @@ public class SauceTests extends BaseTest {
 		String name1 = inventoryNames.get(1).getText();
 		String name2 = inventoryNames.get(2).getText();
 		
-		Assert.assertEquals(inventoryPage.getCartBadgeCount(), 3, "Badge count mismatch!");
+		int badgeCount = inventoryPage.getCartBadgeCount();
+		log.info("Evaluating DOM numeric notification balance badge elements. Current parsed total count: " + badgeCount);
+		Assert.assertEquals(badgeCount, 3, "Badge count mismatch!");
 		ExtentReportManager.getTest().pass("Cart header notification badge matches exactly [3].");
 
 		inventoryPage.refreshElements();
+		log.info("Evicting baseline node array item at grid matrix index position 0.");
 		inventoryPage.getInventoryBtns().get(0).click(); 
-		Assert.assertEquals(inventoryPage.getCartBadgeCount(), 2, "Badge count should be 2!");
+		
+		badgeCount = inventoryPage.getCartBadgeCount();
+		log.info("Recalculating DOM badge properties post-removal actions. Decremented current total balance count: " + badgeCount);
+		Assert.assertEquals(badgeCount, 2, "Badge count should be 2!");
 		ExtentReportManager.getTest().info("Evicted initial item from catalog table screen view. Badge dropped to [2].");
 		
 		inventoryPage.goTocartPage();
 		List<String> expectedCartNames = new ArrayList<>(Arrays.asList(name1, name2));
 		List<String> actualCartNames = cartPage.getProductNames();
 		
+		log.info("Verifying product name data properties inside the checkout view workspace.");
 		Collections.sort(expectedCartNames);
 		Collections.sort(actualCartNames);
 		Assert.assertEquals(actualCartNames, expectedCartNames, "The cart contents do not match!");
@@ -130,13 +151,16 @@ public class SauceTests extends BaseTest {
 	
 	@Test
 	public void e2ePurchase() {
+		log.info("Starting complete end-to-end checkout purchase execution pipeline workflow.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		
 		List<WebElement> productNames = inventoryPage.getNameElements();
 		List<WebElement> inventoryBtns = inventoryPage.getInventoryBtns();
 		
+		log.info("Scanning inventory landing catalog table for target entry parameter: 'Sauce Labs Backpack'");
 		for(int i = 0; i < productNames.size(); i++) {
 			if(productNames.get(i).getText().equalsIgnoreCase("Sauce Labs Backpack")) {
+				log.info("Target object match localized at row entry index slot position: " + i);
 				inventoryBtns.get(i).click();
 				break;
 			}
@@ -147,31 +171,39 @@ public class SauceTests extends BaseTest {
 		inventoryPage.goTocartPage();
 		cartPage.clickCheckOut();
 		
+		log.info("Populating form execution variables with properties context values.");
 		ExtentReportManager.getTest().info("Populating submission form parameters with structural dataset properties.");
 		checkOutPage.enterDetails(creader.getString("firstname"), creader.getString("lastname"), creader.getString("zipCode"));
 		checkOutPage.clickContinue();
 		
+		log.info("Executing mathematical balance verification audits across transaction summary price strings.");
 		double itemPrice = summaryPage.getSubTotalAmt();
 		double taxAmt = summaryPage.getTaxAmt();
 		double actualTotalAmt = itemPrice + taxAmt;
 		double expectedTotalAmt = summaryPage.getFinalTotalAmt();
+		log.info("Mathematical matrix evaluation -> Base Cost Subtotal: " + itemPrice + " | Added Calculated Sales Tax: " + taxAmt + " | Expected Final Grand Total: " + expectedTotalAmt);
 		
 		Assert.assertEquals(actualTotalAmt, expectedTotalAmt, "Math mismatch in order summary!");
 		ExtentReportManager.getTest().pass("Order statement calculation verified successfully: Base Item Subtotal + Calculated Tax matches Grand Total.");
 		
 		summaryPage.clickFinish();
-		Assert.assertEquals(summaryPage.getConfirmationMsg(), "Thank you for your order!", "Final order confirmation failed!"); 
+		String confirmationMsg = summaryPage.getConfirmationMsg();
+		log.info("Order submission finalized completely. Validating checkout confirmation screen response string message: " + confirmationMsg);
+		Assert.assertEquals(confirmationMsg, "Thank you for your order!", "Final order confirmation failed!"); 
 		ExtentReportManager.getTest().pass("E2E purchase process sequence achieved completely. Order confirmation greeting screen logged.");
 	}
 	
 	@Test
 	public void verifyProductDetailPage() {
+		log.info("Starting verifyProductDetailPage deep link verification sequence strategy.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		
 		String expected_productName = inventoryPage.getNameElements().get(1).getText();
+		log.info("Target product item name identified at grid catalog line entry reference: " + expected_productName);
 		ExtentReportManager.getTest().info("Navigating straight into single product specialized deep-link detail page sheet panel.");
 		inventoryPage.clickProductNameByIndex(1);
 		
+		log.info("Extracting individual localized element variables from specialized focus layout sheets panel.");
 		String actualProductName = productDetailsPage.getProductName();
 		String actualProductDesc = productDetailsPage.getProductDesc();
 		String actualProductPrice = productDetailsPage.getproductPrice();
@@ -181,20 +213,23 @@ public class SauceTests extends BaseTest {
 		Assert.assertTrue(actualProductPrice.contains("$"), "Price format is incorrect or missing!");
 		ExtentReportManager.getTest().pass("Isolated deep-link detail parameters (Title text, descriptive text strings, pricing tags) are structurally healthy.");
 		
+		log.info("Testing product addition execution triggers directly inside deep detailed panels focus view layout matrix.");
 		productDetailsPage.clickOnAddToCart();
 		Assert.assertEquals(inventoryPage.getCartBadgeCount(), 1, "Cart badge did not update from detail page!");
 		ExtentReportManager.getTest().pass("Basket accumulation action processed directly within detail page view matrix.");
 		
 		productDetailsPage.ClickOnBackToProductsBtn();
 		
-		// FIXED: Replaced 'driver' with thread-isolated 'DriverFactory.getDriver()'
-		Assert.assertTrue(DriverFactory.getDriver().getCurrentUrl().contains("inventory.html"), "Did not navigate back to the inventory URL!");
+		String currentUrl = DriverFactory.getDriver().getCurrentUrl();
+		log.info("History back button redirection routing verification audit checklist step. Navigated location state tracking pointer link URL: " + currentUrl);
+		Assert.assertTrue(currentUrl.contains("inventory.html"), "Did not navigate back to the inventory URL!");
 		Assert.assertEquals(inventoryPage.getPageTitle(), "Products", "Main inventory page heading is incorrect!");
 		ExtentReportManager.getTest().pass("History navigation routing back to main grid catalog validated.");
 	}
 	
 	@Test
 	public void verifyCartPersistenceAndRemoval() {
+		log.info("Starting verifyCartPersistenceAndRemoval system workflow stress strategy execution run.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		inventoryPage.refreshElements();
 		inventoryPage.getInventoryBtns().get(0).click(); 
@@ -206,6 +241,7 @@ public class SauceTests extends BaseTest {
 		String expectedRemainingName = inventoryPage.getNameElements().get(1).getText();
 		String expectedRemainingPrice = inventoryPage.getPriceElements().get(1).getText();
 		
+		log.info("Simulating user navigation detours to evaluate page memory cache state retention parameters properties.");
 		ExtentReportManager.getTest().info("Executing comprehensive navigation stress cycle detour to verify cache persistence.");
 		inventoryPage.refreshElements();
 		inventoryPage.getNameElements().get(0).click();
@@ -217,6 +253,7 @@ public class SauceTests extends BaseTest {
 		inventoryPage.goTocartPage();
 		Assert.assertEquals(cartPage.getCartItemCount(), 2, "Cart Item Count Mismatch");
 		
+		log.info("Evicting item record tracking block entry completely from table context layout inside Cart checkout workspace view.");
 		cartPage.removeCartItemByIndex(0);
 		Assert.assertEquals(cartPage.getCartItemCount(), 1, "Cart Item Count Mismatch");
 		ExtentReportManager.getTest().info("Target collection row item dropped directly from within the checkout table context layout.");
@@ -224,6 +261,7 @@ public class SauceTests extends BaseTest {
 		String actualProdname = cartPage.getProductNames().get(0);
 		String actualProPrice = cartPage.getCartItemPriceByIndex(0);
 		
+		log.info("Evaluating integrity metrics of surviving product list array records elements items data parameters metadata markers.");
 		Assert.assertEquals(actualProdname, expectedRemainingName, "The wrong item was left in the cart!");
 		Assert.assertEquals(actualProPrice, expectedRemainingPrice, "The price of the remaining item changed unexpectedly!");
 		ExtentReportManager.getTest().pass("Surviving line record tracking balances and identification markers confirmed as unaltered.");
@@ -231,30 +269,37 @@ public class SauceTests extends BaseTest {
 	
 	@Test
 	public void verifyLogoutAndSessionValidation() {
+		log.info("Starting verifyLogoutAndSessionValidation security access workflow validation processing sequence.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		
+		log.info("Triggering exit application logout commands to clear active profile authorization context headers elements.");
 		ExtentReportManager.getTest().info("Triggering standard exit sequence logic to clear active auth profiles.");
 		inventoryPage.clickOnMenuBtn();
 		inventoryPage.clickOnLogOut();
 		
-		// FIXED: Replaced 'driver' with thread-isolated 'DriverFactory.getDriver()'
-		Assert.assertTrue(DriverFactory.getDriver().getCurrentUrl().contains("https://www.saucedemo.com/"), "URL does not match the login screen base destination!");
+		String currentUrl = DriverFactory.getDriver().getCurrentUrl();
+		log.info("Evaluating location routing after explicit user sign-out action commands. Verified destination link: " + currentUrl);
+		Assert.assertTrue(currentUrl.contains("https://www.saucedemo.com/"), "URL does not match the login screen base destination!");
 		ExtentReportManager.getTest().pass("Session token invalidated natively. Browser routed back to baseline landing gate.");
 		
+		log.info("Injecting rogue bypass navigation tracking script link to forcefully load deep internal protected view directories dashboard layout without active auth.");
 		ExtentReportManager.getTest().info("Executing malicious route-injection verification step directly into protected view workspace (/inventory.html).");
 		DriverFactory.getDriver().get("https://www.saucedemo.com/inventory.html");
 		
 		String currUrlAfterByPass = DriverFactory.getDriver().getCurrentUrl();
+		log.info("Analyzing security guard intercept action responses. Page tracking url post injection bypass attempt: " + currUrlAfterByPass);
 		Assert.assertTrue(currUrlAfterByPass.contains("https://www.saucedemo.com/"), "System failed to redirect unauthenticated guest back to landing pad.");
 		ExtentReportManager.getTest().pass("Access-control guard check confirmed: direct link bypass aborted, unauthorized context routed back to gate screen layout.");
 	}
 	
 	@Test
 	public void verifyImageAndProductConsistency() {
+		log.info("Starting global static content validation checks and compliance accessibility audits loop.");
 		loginPage.login(creader.getString("username"), creader.getString("password"));
 		inventoryPage.refreshElements();
 		
 		int productCount = inventoryPage.getProductImages().size();
+		log.info("Discovered total graphic components arrays properties. Iterating over image links count total target: " + productCount);
 		ExtentReportManager.getTest().info("Commencing global accessibility asset audit loop across " + productCount + " image containers.");
 		
 		for (int i = 0; i < productCount; i++) {
@@ -265,6 +310,7 @@ public class SauceTests extends BaseTest {
 			String imgAlt = imgElement.getAttribute("alt");
 			String productName = inventoryPage.getNameElements().get(i).getText();
 			
+			log.info("Analyzing index position reference element properties node item [" + i + "] | Source Path string location: " + imgSrc + " | Accessibility Label Tag info: " + imgAlt);
 			Assert.assertNotNull(imgSrc, "Product image source attribute is completely null at index " + i);
 			Assert.assertFalse(imgSrc.isEmpty(), "Product image source attribute is empty at index " + i);
 			Assert.assertFalse(imgSrc.contains("sl-404"), "Broken image link signature (sl-404) detected at index " + i);
@@ -274,20 +320,20 @@ public class SauceTests extends BaseTest {
 		
 		inventoryPage.refreshElements();
 		String targetedProductName = inventoryPage.getNameElements().get(0).getText();
-		
+		log.info("Testing element hyperlink consistency mapping. Target item picture mapping to perform action: " + targetedProductName);
 		inventoryPage.getProductImages().get(0).click(); 
 		
-		// FIXED: Passed ThreadLocal driver handle down explicitly
 		pages.ProductDetailsPage detailsPage = new pages.ProductDetailsPage(DriverFactory.getDriver());
 		String actualDetailName = detailsPage.getProductName();
 		
+		log.info("Detailed anchor view redirection tracking completed. Loaded detail sheet focus header item text output contents parameter: " + actualDetailName);
 		Assert.assertEquals(actualDetailName, targetedProductName, "Image routing discrepancy: Clicking the image loaded the wrong product detail view!");
 		ExtentReportManager.getTest().pass("Visual anchor hyper-routing check verified. Product picture click maps to the proper target product summary sheets layout.");
 	}
 	
-	// FIXED: Added dependsOnMethods parameter to guarantee isolation test runs in its own pristine sandbox window block
 	@Test(dependsOnMethods = {"VerifyCartBadgeUpdateOnAddAndRemove", "e2ePurchase", "verifyCartPersistenceAndRemoval"})
 	public void verifyCrossUserCartIsolation() {
+		log.info("Starting Multi-Tenant Security Access Isolation check verification sequence workflows.");
 		loginPage.login("standard_user", creader.getString("password"));
 		ExtentReportManager.getTest().info("Multi-Tenant Isolation Phase 1: populating tracking memory state of baseline tenant account context profile 'standard_user'.");
 		
@@ -297,43 +343,50 @@ public class SauceTests extends BaseTest {
 		inventoryPage.getInventoryBtns().get(1).click(); 
 		Assert.assertEquals(inventoryPage.getCartBadgeCount(), 2, "Standard user cart did not register 2 items!");
 
+		log.info("Tenant 1 data population verified successfully. Dropping cookies, terminating active auth context headers variables elements.");
 		inventoryPage.clickOnMenuBtn();
 		inventoryPage.clickOnLogOut();
 		
-		ExtentReportManager.getTest().info("Executing absolute browser cleanup: dropping cookies, resetting local and session storage layers.");
-		
-		// FIXED: Switched old 'driver' call references to isolated 'DriverFactory.getDriver()'
+		log.info("Executing comprehensive local cache memory wipe parameters over core active browser storage vectors elements.");
 		DriverFactory.getDriver().manage().deleteAllCookies();
 		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) DriverFactory.getDriver();
 		js.executeScript("window.localStorage.clear();");
 		js.executeScript("window.sessionStorage.clear();");
 
+		log.info("Mounting cross-tenant security verification profile tracking instance context account: problem_user");
 		loginPage.login("problem_user", creader.getString("password"));
 		ExtentReportManager.getTest().info("Multi-Tenant Isolation Phase 2: mounting structural cross-tenant verification account profile 'problem_user'.");
 		
 		inventoryPage.refreshElements();
 		inventoryPage.goTocartPage();
-		Assert.assertEquals(cartPage.getCartItemCount(), 0, "SECURITY LEAK: Data isolation failure! problem_user can see items added by standard_user.");
+		
+		int isolatedCartItemCount = cartPage.getCartItemCount();
+		log.info("Auditing data contamination parameters leaks status. Discovered cross-user items total count balance inside problem_user session view layer: " + isolatedCartItemCount);
+		Assert.assertEquals(isolatedCartItemCount, 0, "SECURITY LEAK: Data isolation failure! problem_user can see items added by standard_user.");
 		ExtentReportManager.getTest().pass("Data state leak check passed. Active user context has clean isolated baseline session context parameters.");
 
 		DriverFactory.getDriver().get("https://www.saucedemo.com/inventory.html");
 		inventoryPage.refreshElements();
 		inventoryPage.getInventoryBtns().get(0).click();
 		
+		log.info("Tenant 2 isolation parameters complete. Executing clear logic actions metrics across storage properties vector elements variables.");
 		inventoryPage.clickOnMenuBtn();
 		inventoryPage.clickOnLogOut();
 		
-		ExtentReportManager.getTest().info("Wiping state footprints left by trailing session actions across storage parameters.");
 		DriverFactory.getDriver().manage().deleteAllCookies();
 		js.executeScript("window.localStorage.clear();");
 		js.executeScript("window.sessionStorage.clear();");
 		
+		log.info("Reloading baseline user context 'standard_user' session instances to audit state data boundaries.");
 		loginPage.login("standard_user", creader.getString("password"));
 		ExtentReportManager.getTest().info("Multi-Tenant Isolation Phase 3: Reloading standard execution context profile 'standard_user' into clean dashboard view.");
 		
 		inventoryPage.refreshElements();
 		inventoryPage.goTocartPage();
-		Assert.assertEquals(cartPage.getCartItemCount(), 0, "Data persistence isolation failure: standard_user's new login state caught data contamination.");
+		
+		int baselineFinalCartCount = cartPage.getCartItemCount();
+		log.info("Analyzing surviving baseline data parameters totals bounds. Current total cart lines counts inside re-authenticated baseline session views: " + baselineFinalCartCount);
+		Assert.assertEquals(baselineFinalCartCount, 0, "Data persistence isolation failure: standard_user's new login state caught data contamination.");
 		ExtentReportManager.getTest().pass("Total cross-account security decoupling verified. State boundaries completely prevent cross-tenant data visibility leakage leaks.");
 	}
 }

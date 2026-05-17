@@ -12,7 +12,10 @@
           <include name="tearDown"/>
           <include name="wrapUpReporting"/>
           <include name="setupReporting"/>
-          <include name="verifyProductSorting"/>
+          <include name="e2ePurchase"/>
+          <include name="verifyCartPersistenceAndRemoval"/>
+          <include name="verifyCrossUserCartIsolation"/>
+          <include name="VerifyCartBadgeUpdateOnAddAndRemove"/>
           <include name="pageSetUp"/>
         </methods>
       </class> <!-- tests.SauceTests -->

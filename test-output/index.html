@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="navigator-link">
-              <span class="suite-name border-passed">SauceDemo Parallel Suite</span>
+              <span class="suite-name border-failed">SauceDemo Parallel Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SauceDemo_Parallel_Suite" class="navigator-link ">
-                    <span>C:\Users\2457272\eclipse-workspace\Project_in_Training\testng.xml</span>
+                    <span>C:\Users\2457272\eclipse-workspace\Project_in_Training_ADV\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,54 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,  3 skipped,  10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="hide-methods failed suite-SauceDemo_Parallel_Suite"> (hide)</a> <!-- hide-methods failed suite-SauceDemo_Parallel_Suite -->
+                      <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="show-methods failed suite-SauceDemo_Parallel_Suite"> (show)</a> <!-- show-methods failed suite-SauceDemo_Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-SauceDemo_Parallel_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="VerifyCartBadgeUpdateOnAddAndRemove">VerifyCartBadgeUpdateOnAddAndRemove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SauceDemo_Parallel_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="hide-methods skipped suite-SauceDemo_Parallel_Suite"> (hide)</a> <!-- hide-methods skipped suite-SauceDemo_Parallel_Suite -->
+                      <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="show-methods skipped suite-SauceDemo_Parallel_Suite"> (show)</a> <!-- show-methods skipped suite-SauceDemo_Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-SauceDemo_Parallel_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="verifyCrossUserCartIsolation">verifyCrossUserCartIsolation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SauceDemo_Parallel_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="hide-methods skipped suite-SauceDemo_Parallel_Suite"> (hide)</a> <!-- hide-methods skipped suite-SauceDemo_Parallel_Suite -->
+                      <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" class="show-methods skipped suite-SauceDemo_Parallel_Suite"> (show)</a> <!-- show-methods skipped suite-SauceDemo_Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-SauceDemo_Parallel_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="VerifyCartBadgeUpdateOnAddAndRemove">VerifyCartBadgeUpdateOnAddAndRemove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="VerifyCartBadgeUpdateOnAddAndRemove">VerifyCartBadgeUpdateOnAddAndRemove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SauceDemo_Parallel_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,27 +150,7 @@
                     <div class="method-list-content passed suite-SauceDemo_Parallel_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="VerifyCartBadgeUpdateOnAddAndRemove">VerifyCartBadgeUpdateOnAddAndRemove</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="e2ePurchase">e2ePurchase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="loginScenarios(Empty Login, , , Epic sadface: Username is required)">loginScenarios(Empty Login, , , Epic sadface: Username is required)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="loginScenarios(Valid Login, standard_user, secret_sauce, Products)">loginScenarios(Valid Login, standard_user, secret_sauce, Products)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)">loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,12 +160,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="verifyCartPersistenceAndRemoval">verifyCartPersistenceAndRemoval</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="loginScenarios(Valid Login, standard_user, secret_sauce, Products)">loginScenarios(Valid Login, standard_user, secret_sauce, Products)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="verifyCrossUserCartIsolation">verifyCrossUserCartIsolation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="loginScenarios(Empty Login, , , Epic sadface: Username is required)">loginScenarios(Empty Login, , , Epic sadface: Username is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)">loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Parallel_Suite" title="tests.SauceTests" class="method navigator-link" hash-for-method="verifyCartPersistenceAndRemoval">verifyCartPersistenceAndRemoval</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -173,9 +210,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SauceDemo_Parallel_Suite" class="panel SauceDemo_Parallel_Suite">
-          <div class="suite-SauceDemo_Parallel_Suite-class-passed">
+          <div class="suite-SauceDemo_Parallel_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.SauceTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -184,37 +221,88 @@
                   <a name="VerifyCartBadgeUpdateOnAddAndRemove">
                   </a> <!-- VerifyCartBadgeUpdateOnAddAndRemove -->
                   <span class="method-name">VerifyCartBadgeUpdateOnAddAndRemove</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove(SauceTests.java:149)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SauceDemo_Parallel_Suite-class-failed -->
+          <div class="suite-SauceDemo_Parallel_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.SauceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartBadgeUpdateOnAddAndRemove">
+                  </a> <!-- VerifyCartBadgeUpdateOnAddAndRemove -->
+                  <span class="method-name">VerifyCartBadgeUpdateOnAddAndRemove</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove(SauceTests.java:149)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartBadgeUpdateOnAddAndRemove">
+                  </a> <!-- VerifyCartBadgeUpdateOnAddAndRemove -->
+                  <span class="method-name">VerifyCartBadgeUpdateOnAddAndRemove</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove(SauceTests.java:149)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCrossUserCartIsolation">
+                  </a> <!-- verifyCrossUserCartIsolation -->
+                  <span class="method-name">verifyCrossUserCartIsolation</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.SauceTests.verifyCrossUserCartIsolation() on instance tests.SauceTests@52de51b6 depends on not successfully finished methods 
+[tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove() on instance tests.SauceTests@52de51b6
+tests.SauceTests.verifyCartPersistenceAndRemoval() on instance tests.SauceTests@52de51b6
+tests.SauceTests.e2ePurchase() on instance tests.SauceTests@52de51b6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SauceDemo_Parallel_Suite-class-skipped -->
+          <div class="suite-SauceDemo_Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SauceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="e2ePurchase">
                   </a> <!-- e2ePurchase -->
                   <span class="method-name">e2ePurchase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginScenarios(Empty Login, , , Epic sadface: Username is required)">
-                  </a> <!-- loginScenarios(Empty Login, , , Epic sadface: Username is required) -->
-                  <span class="method-name">loginScenarios</span>
-                  <span class="parameters">(Empty Login,,,Epic sadface: Username is required)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginScenarios(Valid Login, standard_user, secret_sauce, Products)">
-                  </a> <!-- loginScenarios(Valid Login, standard_user, secret_sauce, Products) -->
-                  <span class="method-name">loginScenarios</span>
-                  <span class="parameters">(Valid Login,standard_user,secret_sauce,Products)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)">
-                  </a> <!-- loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...) -->
-                  <span class="method-name">loginScenarios</span>
-                  <span class="parameters">(Wrong Password,standard_user,wrongpass123,Epic sadface: Username and password do not match any user in this service)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -227,16 +315,33 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCartPersistenceAndRemoval">
-                  </a> <!-- verifyCartPersistenceAndRemoval -->
-                  <span class="method-name">verifyCartPersistenceAndRemoval</span>
+                  <a name="loginScenarios(Valid Login, standard_user, secret_sauce, Products)">
+                  </a> <!-- loginScenarios(Valid Login, standard_user, secret_sauce, Products) -->
+                  <span class="method-name">loginScenarios</span>
+                  <span class="parameters">(Valid Login,standard_user,secret_sauce,Products)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCrossUserCartIsolation">
-                  </a> <!-- verifyCrossUserCartIsolation -->
-                  <span class="method-name">verifyCrossUserCartIsolation</span>
+                  <a name="loginScenarios(Empty Login, , , Epic sadface: Username is required)">
+                  </a> <!-- loginScenarios(Empty Login, , , Epic sadface: Username is required) -->
+                  <span class="method-name">loginScenarios</span>
+                  <span class="parameters">(Empty Login,,,Epic sadface: Username is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)">
+                  </a> <!-- loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...) -->
+                  <span class="method-name">loginScenarios</span>
+                  <span class="parameters">(Wrong Password,standard_user,wrongpass123,Epic sadface: Username and password do not match any user in this service)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartPersistenceAndRemoval">
+                  </a> <!-- verifyCartPersistenceAndRemoval -->
+                  <span class="method-name">verifyCartPersistenceAndRemoval</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -272,7 +377,7 @@
         </div> <!-- panel SauceDemo_Parallel_Suite -->
         <div panel-name="test-xml-SauceDemo_Parallel_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2457272\eclipse-workspace\Project_in_Training\testng.xml</span>
+            <span class="header-content">C:\Users\2457272\eclipse-workspace\Project_in_Training_ADV\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -324,55 +429,63 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCrossUserCartIsolation')
+data.setCell(0, 1, 'verifyLogoutAndSessionValidation')
 data.setCell(0, 2, 'tests.SauceTests')
-data.setCell(0, 3, 3733);
+data.setCell(0, 3, 1721);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyImageAndProductConsistency')
+data.setCell(1, 1, 'e2ePurchase')
 data.setCell(1, 2, 'tests.SauceTests')
-data.setCell(1, 3, 1907);
+data.setCell(1, 3, 1605);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogoutAndSessionValidation')
+data.setCell(2, 1, 'VerifyCartBadgeUpdateOnAddAndRemove')
 data.setCell(2, 2, 'tests.SauceTests')
-data.setCell(2, 3, 1230);
+data.setCell(2, 3, 1489);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'e2ePurchase')
+data.setCell(3, 1, 'verifyProductSorting')
 data.setCell(3, 2, 'tests.SauceTests')
-data.setCell(3, 3, 1227);
+data.setCell(3, 3, 1441);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyProductDetailPage')
+data.setCell(4, 1, 'verifyCartPersistenceAndRemoval')
 data.setCell(4, 2, 'tests.SauceTests')
-data.setCell(4, 3, 1128);
+data.setCell(4, 3, 1148);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyProductSorting')
+data.setCell(5, 1, 'VerifyCartBadgeUpdateOnAddAndRemove')
 data.setCell(5, 2, 'tests.SauceTests')
-data.setCell(5, 3, 970);
+data.setCell(5, 3, 1140);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyCartPersistenceAndRemoval')
+data.setCell(6, 1, 'VerifyCartBadgeUpdateOnAddAndRemove')
 data.setCell(6, 2, 'tests.SauceTests')
-data.setCell(6, 3, 964);
+data.setCell(6, 3, 1111);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'VerifyCartBadgeUpdateOnAddAndRemove')
+data.setCell(7, 1, 'verifyProductDetailPage')
 data.setCell(7, 2, 'tests.SauceTests')
-data.setCell(7, 3, 963);
+data.setCell(7, 3, 1012);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginScenarios')
+data.setCell(8, 1, 'verifyImageAndProductConsistency')
 data.setCell(8, 2, 'tests.SauceTests')
-data.setCell(8, 3, 367);
+data.setCell(8, 3, 983);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'loginScenarios')
 data.setCell(9, 2, 'tests.SauceTests')
-data.setCell(9, 3, 308);
+data.setCell(9, 3, 461);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'loginScenarios')
 data.setCell(10, 2, 'tests.SauceTests')
-data.setCell(10, 3, 305);
+data.setCell(10, 3, 411);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'loginScenarios')
 data.setCell(11, 2, 'tests.SauceTests')
-data.setCell(11, 3, 253);
+data.setCell(11, 3, 402);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginScenarios')
+data.setCell(12, 2, 'tests.SauceTests')
+data.setCell(12, 3, 400);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyCrossUserCartIsolation')
+data.setCell(13, 2, 'tests.SauceTests')
+data.setCell(13, 3, 0);
 window.suiteTableData['SauceDemo_Parallel_Suite']= { tableData: data, tableDiv: 'times-div-SauceDemo_Parallel_Suite'}
 return data;
 }
@@ -410,199 +523,217 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove())</span>
-                <span class="method-start">223 ms</span>
+                <span class="method-start">332 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">3789 ms</span>
+                <span class="method-start">6156 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyCartBadgeUpdateOnAddAndRemove</span>
-                <span class="method-start">3829 ms</span>
+                <span class="method-start">6224 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=VerifyCartBadgeUpdateOnAddAndRemove status=SUCCESS method=SauceTests.VerifyCartBadg...)</span>
-                <span class="method-start">4797 ms</span>
+                <span class="method-name">tearDown([TestResult name=VerifyCartBadgeUpdateOnAddAndRemove status=SKIP method=SauceTests.VerifyCartBadgeUp...)</span>
+                <span class="method-start">7723 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove())</span>
+                <span class="method-start">13274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">pageSetUp</span>
+                <span class="method-start">18092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCartBadgeUpdateOnAddAndRemove</span>
+                <span class="method-start">18097 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=VerifyCartBadgeUpdateOnAddAndRemove status=SKIP method=SauceTests.VerifyCartBadgeUp...)</span>
+                <span class="method-start">19240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.SauceTests.VerifyCartBadgeUpdateOnAddAndRemove())</span>
+                <span class="method-start">24550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyCartBadgeUpdateOnAddAndRemove</span>
+                <span class="method-start">30258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">pageSetUp</span>
+                <span class="method-start">30258 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=VerifyCartBadgeUpdateOnAddAndRemove status=FAILURE method=SauceTests.VerifyCartBadg...)</span>
+                <span class="method-start">31371 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.e2ePurchase())</span>
-                <span class="method-start">9198 ms</span>
+                <span class="method-start">37483 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">12391 ms</span>
+                <span class="method-start">42713 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">e2ePurchase</span>
-                <span class="method-start">12397 ms</span>
+                <span class="method-start">42715 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=e2ePurchase status=SUCCESS method=SauceTests.e2ePurchase()[pri:0, instance:tests.Sa...)</span>
-                <span class="method-start">13626 ms</span>
+                <span class="method-start">44321 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java....)</span>
-                <span class="method-start">18945 ms</span>
+                <span class="method-start">51123 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">22094 ms</span>
+                <span class="method-start">56213 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginScenarios(Empty Login, , , Epic sadface: Username is required)</span>
-                <span class="method-start">22101 ms</span>
+                <span class="method-start">56217 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,jav...)</span>
-                <span class="method-start">22357 ms</span>
+                <span class="method-start">56620 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java....)</span>
-                <span class="method-start">26522 ms</span>
+                <span class="method-start">62588 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">29655 ms</span>
+                <span class="method-start">68114 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginScenarios(Wrong Password, standard_user, wrongpass123, Epic sadface: Username and password do not match any us...)</span>
-                <span class="method-start">29660 ms</span>
+                <span class="method-start">68116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,jav...)</span>
-                <span class="method-start">29970 ms</span>
+                <span class="method-start">68579 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java....)</span>
-                <span class="method-start">33956 ms</span>
+                <span class="method-start">74202 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">37042 ms</span>
+                <span class="method-start">79344 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginScenarios(Locked User, locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)</span>
-                <span class="method-start">37046 ms</span>
+                <span class="method-start">79346 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,jav...)</span>
-                <span class="method-start">37415 ms</span>
+                <span class="method-start">79750 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.loginScenarios(java.lang.String,java.lang.String,java.lang.String,java....)</span>
-                <span class="method-start">41369 ms</span>
+                <span class="method-start">85459 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">44623 ms</span>
+                <span class="method-start">90405 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginScenarios(Valid Login, standard_user, secret_sauce, Products)</span>
-                <span class="method-start">44625 ms</span>
+                <span class="method-start">90407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginScenarios status=SUCCESS method=SauceTests.loginScenarios(java.lang.String,jav...)</span>
-                <span class="method-start">44932 ms</span>
+                <span class="method-start">90819 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.verifyCartPersistenceAndRemoval())</span>
-                <span class="method-start">49153 ms</span>
+                <span class="method-start">96361 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">52340 ms</span>
+                <span class="method-start">101917 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCartPersistenceAndRemoval</span>
-                <span class="method-start">52344 ms</span>
+                <span class="method-start">101919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyCartPersistenceAndRemoval status=SUCCESS method=SauceTests.verifyCartPersiste...)</span>
-                <span class="method-start">53308 ms</span>
+                <span class="method-start">103069 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.verifyImageAndProductConsistency())</span>
-                <span class="method-start">57455 ms</span>
+                <span class="method-start">112979 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">61867 ms</span>
+                <span class="method-start">117736 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyImageAndProductConsistency</span>
-                <span class="method-start">61872 ms</span>
+                <span class="method-start">117738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyImageAndProductConsistency status=SUCCESS method=SauceTests.verifyImageAndPro...)</span>
-                <span class="method-start">63781 ms</span>
+                <span class="method-start">118723 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.verifyLogoutAndSessionValidation())</span>
-                <span class="method-start">68542 ms</span>
+                <span class="method-start">124240 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">71787 ms</span>
+                <span class="method-start">128733 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogoutAndSessionValidation</span>
-                <span class="method-start">71789 ms</span>
+                <span class="method-start">128735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyLogoutAndSessionValidation status=SUCCESS method=SauceTests.verifyLogoutAndSe...)</span>
-                <span class="method-start">73021 ms</span>
+                <span class="method-start">130458 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.verifyProductDetailPage())</span>
-                <span class="method-start">77606 ms</span>
+                <span class="method-start">135642 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">80287 ms</span>
+                <span class="method-start">140185 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductDetailPage</span>
-                <span class="method-start">80290 ms</span>
+                <span class="method-start">140187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductDetailPage status=SUCCESS method=SauceTests.verifyProductDetailPage()[...)</span>
-                <span class="method-start">81419 ms</span>
+                <span class="method-start">141201 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.SauceTests.verifyProductSorting())</span>
-                <span class="method-start">85872 ms</span>
+                <span class="method-start">146220 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetUp</span>
-                <span class="method-start">89164 ms</span>
+                <span class="method-start">150610 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductSorting</span>
-                <span class="method-start">89167 ms</span>
+                <span class="method-start">150612 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductSorting status=SUCCESS method=SauceTests.verifyProductSorting()[pri:0,...)</span>
-                <span class="method-start">90137 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.SauceTests.verifyCrossUserCartIsolation())</span>
-                <span class="method-start">94480 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">pageSetUp</span>
-                <span class="method-start">97572 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCrossUserCartIsolation</span>
-                <span class="method-start">97575 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyCrossUserCartIsolation status=SUCCESS method=SauceTests.verifyCrossUserCartIs...)</span>
-                <span class="method-start">101311 ms</span>
+                <span class="method-start">152054 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">wrapUpReporting</span>
-                <span class="method-start">105622 ms</span>
+                <span class="method-start">157345 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

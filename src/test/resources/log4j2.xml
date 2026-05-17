@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">./logs</Property>
+    </Properties>
+    
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        
+        <File name="File" fileName="${basePath}/automation_execution.log" append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+    </Appenders>
+    
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>
